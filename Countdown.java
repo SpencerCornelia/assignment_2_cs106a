@@ -6,9 +6,7 @@
  * This file is the starter file for the Countdown problem.
  */
 
-import acm.graphics.*;
 import acm.program.*;
-import java.awt.*;
 
 public class Countdown extends ConsoleProgram {
 	
