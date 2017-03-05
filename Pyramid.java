@@ -40,12 +40,13 @@ public class Pyramid extends GraphicsProgram {
 	double sizeOfBrickBase = BRICKS_IN_BASE_ROW * BRICK_WIDTH;
 	private double x = (width - sizeOfBrickBase) / 2;
 	private int y = 1280;
-	private int pyramidCounter = BRICKS_IN_BASE;
 	private int baseCounter = BRICKS_IN_BASE;
 	
 	
 	public void run() {
-		
+		while (baseCounter > 0) {
+			createRow();
+		}
 	}
 	
 	public void createRow() {
