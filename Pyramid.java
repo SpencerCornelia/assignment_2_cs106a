@@ -58,6 +58,7 @@ public class Pyramid extends GraphicsProgram {
 		for (int i = 0; i < baseCounter; i++) {
 			GRect grect = new GRect(tempX, y, BRICK_WIDTH, BRICK_HEIGHT);
 			tempX += BRICK_WIDTH;
+			add(grect);
 		}
 	}
 }
