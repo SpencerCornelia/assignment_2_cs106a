@@ -15,5 +15,6 @@ public class Target extends GraphicsProgram {
 		GOval outsideOval = new GOval(100, 100, 144, 144);
 		outsideOval.setColor(Color.red);
 		outsideOval.setFilled(true);
+		add(outsideOval);
 	}
 }
