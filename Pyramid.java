@@ -36,7 +36,7 @@ public class Pyramid extends GraphicsProgram {
 	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	double width = screenSize.getWidth();
 	double height = screenSize.getHeight();
-	private double baseCounter = BRICKS_IN_BASE;
+	double baseCounter = BRICKS_IN_BASE;
 	double sizeOfBrickBase = baseCounter * BRICK_WIDTH;
 	double x = (width - sizeOfBrickBase) / 2;
 	
