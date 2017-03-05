@@ -46,6 +46,8 @@ public class Pyramid extends GraphicsProgram {
 	public void run() {
 		while (baseCounter > 0) {
 			createRow();
+			y -= BRICK_HEIGHT;
+			baseCounter -= 1;
 		}
 	}
 	
