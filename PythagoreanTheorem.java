@@ -21,5 +21,7 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		System.out.println("b: " + userInputB);
 		double c = Math.sqrt((userInputA * userInputA) + (userInputB * userInputB));
 		System.out.println("c = " + c);
+		a.close();
+		b.close();
 	}
 }
