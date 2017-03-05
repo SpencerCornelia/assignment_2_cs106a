@@ -18,6 +18,6 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		double userInputB = userInputScanner.nextDouble();
 		System.out.println("a: " + userInputA);
 		System.out.println("b: " + userInputB);
-		
+		double c = Math.sqrt((userInputA * userInputA) + (userInputB * userInputB));
 	}
 }
