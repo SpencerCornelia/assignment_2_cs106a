@@ -23,5 +23,8 @@ public class Target extends GraphicsProgram {
 		add(middleOval);
 		
 		GOval innerOval = new GOval(140, 140, 43.2, 43.2);
+		innerOval.setColor(Color.red);
+		innerOval.setFilled(true);
+		add(innerOval);
 	}
 }
