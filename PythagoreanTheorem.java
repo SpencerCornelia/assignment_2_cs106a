@@ -8,7 +8,6 @@
 
 import acm.program.*;
 import java.util.Scanner;
-import java.util.*;
 
 public class PythagoreanTheorem extends ConsoleProgram {
 	public void run() {
