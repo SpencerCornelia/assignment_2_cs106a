@@ -31,6 +31,7 @@ public class Pyramid extends GraphicsProgram {
 	double width = screenSize.getWidth();
 	double height = screenSize.getHeight();
 	double sizeOfBrickBase = BRICKS_IN_BASE_ROW * BRICK_WIDTH;
+	private double x = width / 2;
 	
 	public void run() {
 		
