@@ -55,6 +55,7 @@ public class Pyramid extends GraphicsProgram {
 		//loop ends at sizeOfBrickBase
 		for (int i = 1; i <= baseCounter; i++) {
 			GRect grect = new GRect(tempX, height - 100, BRICK_WIDTH, BRICK_HEIGHT);
+			tempX += BRICK_WIDTH;
 			add(grect);
 		}
 	}
