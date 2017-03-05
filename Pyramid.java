@@ -15,6 +15,13 @@ import acm.program.*;
 import java.awt.*;
 
 public class Pyramid extends GraphicsProgram {
+	
+	/*
+	 * need to begin the row x pixels over
+	 * need to run a loop and create a new GRect counter amount of times
+	 * can use brick_width to determine when to create the next GRect
+	 * 
+	 */
 
 /** Width of each brick in pixels */
 	private static final int BRICK_WIDTH = 30;
@@ -33,9 +40,22 @@ public class Pyramid extends GraphicsProgram {
 	double sizeOfBrickBase = BRICKS_IN_BASE_ROW * BRICK_WIDTH;
 	private double x = (width - sizeOfBrickBase) / 2;
 	private int y = 1280;
+	private int pyramidCounter = BRICKS_IN_BASE;
+	private int baseCounter = BRICKS_IN_BASE;
+	
 	
 	public void run() {
-		GRect grect = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
+		
+	}
+	
+	public void createRow() {
+		int tempX = (int)x;
+		//run a loop where each GRect begins brick_width in pixels away
+		//loop ends at sizeOfBrickBase
+		for (int i = 0; i < baseCounter; i++) {
+			GRect grect = new GRect(tempX, y, BRICK_WIDTH, BRICK_HEIGHT);
+			tempX += BRICK_WIDTH;
+		}
 	}
 }
 
