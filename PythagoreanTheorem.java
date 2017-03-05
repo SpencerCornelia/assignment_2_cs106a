@@ -14,7 +14,7 @@ public class PythagoreanTheorem extends ConsoleProgram {
 	public void run() {
 		Scanner a = new Scanner(System.in);
 		Scanner b = new Scanner(System.in);
-		System.out.println("Enter values to compute the pythagorean theorem.");
+		System.out.println("Enter values to compute the pythagorean theorem: ");
 		double userInputA = a.nextDouble();
 		double userInputB = b.nextDouble();
 		System.out.println("a: " + userInputA);
