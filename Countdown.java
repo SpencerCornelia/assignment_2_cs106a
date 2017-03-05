@@ -14,7 +14,12 @@ public class Countdown extends ConsoleProgram {
 	private static final int START = 10;
 
 	public void run() {
-		/* You fill this in. */
+		int timer = START;
+		while (timer != 0) {
+			println(timer);
+			timer -= 1;
+		}
+		println("Lift Off!");
 	}
 }
 
