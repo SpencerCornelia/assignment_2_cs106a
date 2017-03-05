@@ -15,7 +15,7 @@ public class DrawCenteredRect extends GraphicsProgram {
 	/** Size of the centered rect */
 	private static final int WIDTH = 350;
 	private static final int HEIGHT = 270;
-	private int x = 150;
+	private int x = 200;
 	private int y = 100;
 
 	public void run() {
