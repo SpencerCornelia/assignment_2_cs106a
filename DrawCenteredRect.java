@@ -15,8 +15,8 @@ public class DrawCenteredRect extends GraphicsProgram {
 	/** Size of the centered rect */
 	private static final int WIDTH = 350;
 	private static final int HEIGHT = 270;
-	private int x = 175;
-	private int y = 135;
+	private int x = this.getWidth();
+	private int y = this.getHeight();
 
 	public void run() {
 		GRect grect = new GRect(x, y, WIDTH, HEIGHT);
