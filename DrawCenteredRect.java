@@ -21,6 +21,7 @@ public class DrawCenteredRect extends GraphicsProgram {
 	public void run() {
 		GRect grect = new GRect(x, y, WIDTH, HEIGHT);
 		grect.setFillColor(Color.blue);
+		grect.setFilled(true);
 		add(grect);
 	}
 }
