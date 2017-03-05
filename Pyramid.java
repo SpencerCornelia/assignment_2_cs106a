@@ -45,7 +45,6 @@ public class Pyramid extends GraphicsProgram {
 			createRow();
 			height -= BRICK_HEIGHT;
 			baseCounter -= 1;
-			sizeOfBrickBase -= BRICK_WIDTH;
 		}
 	}
 	
