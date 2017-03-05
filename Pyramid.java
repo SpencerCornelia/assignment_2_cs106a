@@ -45,6 +45,7 @@ public class Pyramid extends GraphicsProgram {
 			createRow();
 			height -= BRICK_HEIGHT;
 			baseCounter -= 1;
+			sizeOfBrickBase -= BRICK_WIDTH;
 		}
 	}
 	
@@ -54,7 +55,6 @@ public class Pyramid extends GraphicsProgram {
 		//loop ends at sizeOfBrickBase
 		for (int i = 1; i <= baseCounter; i++) {
 			GRect grect = new GRect(tempX, height - 100, BRICK_WIDTH, BRICK_HEIGHT);
-			sizeOfBrickBase -= BRICK_WIDTH;
 			add(grect);
 		}
 	}
