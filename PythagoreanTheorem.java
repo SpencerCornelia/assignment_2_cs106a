@@ -7,9 +7,11 @@
  */
 
 import acm.program.*;
+import java.util.Scanner;
+import java.util.*;
 
 public class PythagoreanTheorem extends ConsoleProgram {
 	public void run() {
-		/* You fill this in */
+		Scanner userInputScanner = new Scanner(System.in);
 	}
 }
