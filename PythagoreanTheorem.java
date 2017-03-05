@@ -13,5 +13,8 @@ import java.util.*;
 public class PythagoreanTheorem extends ConsoleProgram {
 	public void run() {
 		Scanner userInputScanner = new Scanner(System.in);
+		System.out.println("Please enter two numbers to be evaluated.");
+		double userInputA = userInputScanner.nextDouble();
+		double userInputB = userInputScanner.nextDouble();
 	}
 }
