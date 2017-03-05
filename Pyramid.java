@@ -38,7 +38,7 @@ public class Pyramid extends GraphicsProgram {
 	double height = screenSize.getHeight();
 	private double baseCounter = BRICKS_IN_BASE;
 	double sizeOfBrickBase = baseCounter * BRICK_WIDTH;
-	
+	double x = (width - sizeOfBrickBase) / 2;
 	
 	public void run() {
 		while (baseCounter > 0) {
@@ -49,11 +49,11 @@ public class Pyramid extends GraphicsProgram {
 	}
 	
 	public void createRow() {
-		double x = (width - sizeOfBrickBase) / 2;
+		int tempX = (int)x;
 		//run a loop where each GRect begins brick_width in pixels away
 		//loop ends at sizeOfBrickBase
 		for (int i = 1; i <= baseCounter; i++) {
-			GRect grect = new GRect(x, height - 100, BRICK_WIDTH, BRICK_HEIGHT);
+			GRect grect = new GRect(tempX, height - 100, BRICK_WIDTH, BRICK_HEIGHT);
 			sizeOfBrickBase -= BRICK_WIDTH;
 			add(grect);
 		}
