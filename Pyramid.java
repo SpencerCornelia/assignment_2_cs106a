@@ -25,12 +25,15 @@ public class Pyramid extends GraphicsProgram {
 /** Number of bricks in the base of the pyramid */
 	private static final int BRICKS_IN_BASE = 14;
 	
+	private int BRICKS_IN_BASE_ROW = 0;
+	
 	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	double width = screenSize.getWidth();
 	double height = screenSize.getHeight();
+	double sizeOfBrickBase = BRICKS_IN_BASE_ROW * BRICK_WIDTH;
 	
 	public void run() {
-		println("width: " + width + " height: " + height);
+		
 	}
 }
 
