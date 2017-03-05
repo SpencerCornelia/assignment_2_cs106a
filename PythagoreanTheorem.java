@@ -12,10 +12,11 @@ import java.util.*;
 
 public class PythagoreanTheorem extends ConsoleProgram {
 	public void run() {
-		Scanner userInputScanner = new Scanner(System.in);
+		Scanner a = new Scanner(System.in);
+		Scanner b = new Scanner(System.in);
 		System.out.println("Enter values to compute the pythagorean theorem.");
-		double userInputA = userInputScanner.nextDouble();
-		double userInputB = userInputScanner.nextDouble();
+		double userInputA = a.nextDouble();
+		double userInputB = b.nextDouble();
 		System.out.println("a: " + userInputA);
 		System.out.println("b: " + userInputB);
 		double c = Math.sqrt((userInputA * userInputA) + (userInputB * userInputB));
