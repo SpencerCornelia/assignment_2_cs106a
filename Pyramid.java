@@ -53,7 +53,7 @@ public class Pyramid extends GraphicsProgram {
 		int tempX = (int)x;
 		//run a loop where each GRect begins brick_width in pixels away
 		//loop ends at sizeOfBrickBase
-		for (int i = 1; i < baseCounter; i++) {
+		for (int i = 1; i <= baseCounter; i++) {
 			GRect grect = new GRect(tempX, height - 100, BRICK_WIDTH, BRICK_HEIGHT);
 			tempX += BRICK_WIDTH;
 			add(grect);
