@@ -14,7 +14,7 @@ public class FindRange extends ConsoleProgram {
 		int sentinal = 0;
 		Scanner input = new Scanner(System.in);
 		println("This program finds the largest and smallest numbers.");
-		private int final userInput;
+		private int userInput;
 		
 		while (userInput != sentinal) {
 			System.out.print("Please enter a value: ");
