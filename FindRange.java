@@ -10,7 +10,9 @@ import acm.program.*;
 import java.util.Scanner;
 
 public class FindRange extends ConsoleProgram {
-	int static final SENTINAL = readString("Please enter a value: ");
+	println("Please enter a value:");
+	Scanner input = new Scanner(System.in);
+	int static final SENTINAL = input.nextInt();
 	
 	public void run() {
 		println("This program finds the largest and smallest numbers.");
