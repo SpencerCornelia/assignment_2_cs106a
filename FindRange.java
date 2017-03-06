@@ -16,6 +16,7 @@ public class FindRange extends ConsoleProgram {
 		int sentinal = input.nextInt();
 		println("This program finds the largest and smallest numbers.");
 		System.out.print(sentinal);
+		input.close();
 	}
 }
 
