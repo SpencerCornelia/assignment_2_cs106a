@@ -7,10 +7,12 @@
  */
 
 import acm.program.*;
+import java.util.Scanner;
 
 public class Hailstone extends ConsoleProgram {
 	public void run() {
-		/* You fill this in */
+		Scanner a = new Scanner(System.in);
+		System.out.println("Please enter a number: ");
 	}
 }
 
