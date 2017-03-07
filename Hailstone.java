@@ -18,6 +18,7 @@ public class Hailstone extends ConsoleProgram {
 		int userInput = a.nextInt();
 		counter = userInput;
 		runHailstone();
+		a.close();
 	}
 	
 	public void runHailstone() {
